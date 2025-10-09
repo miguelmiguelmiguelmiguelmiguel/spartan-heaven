@@ -1,0 +1,33 @@
+div{
+    border: 1.5px black;
+    border-style:solid;
+    padding: 5px 20px 3px 10px;
+    margin: 15px;
+}
+.valor{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+#pyc{
+    border-style: none;              
+    height: 100%;
+}
+.mcetpm {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15%; 
+    align-items: start; 
+}
+#pyc img{
+    width: 60%;
+}
+.pyc{
+    border-style:none;
+    flex: 1;        
+    padding: 15px;
+}

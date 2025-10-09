@@ -1,0 +1,28 @@
+div{
+    border: 1.5px solid black;
+}
+#money{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 */
+  gap: 20px; /* separaciones */
+  max-width: 8000px;
+  margin: 0 auto;
+  border: none;
+  margin-bottom: 5%;
+}
+#money h2, #money strong{
+  text-decoration: underline;
+}
+#money strong{
+  font-size: x-large;
+}
+#money div{
+  border: 1.5 solid black;
+  padding: 15px;
+  border-radius: 30px;
+  text-align: center;
+}
+.money:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}

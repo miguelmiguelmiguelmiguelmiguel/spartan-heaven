@@ -1,0 +1,221 @@
+div{
+    border: 1.5px soli black;
+}
+h2, h3{
+    text-align: center;
+    text-decoration: underline;
+}
+em{
+    width: 1%;
+}
+p{
+    color: #2E2D2D;
+    text-align: left;
+}
+/* REDES SOCIALES */
+#redes-sociales{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+    justify-items: center; 
+    align-items: center; 
+    margin: 40px auto;
+    max-width: 900px;
+}
+.RRSS{
+    border: 2.5px solid black;
+    padding: 2em 3em;
+}
+.RRSS h3{
+    text-align: center;
+}
+.RRSS p{
+    text-align: left;
+}
+#tiktok{
+    box-shadow: 4px 4px 0px black;
+    border-image: linear-gradient(45deg, #ff0050, #00f2ea) 1;
+}
+#youtube{
+    box-shadow: 4px 4px 0px #ff0000;
+    border-image: linear-gradient(45deg, #ff0000, #000000) 1;
+}
+#instagram{
+    box-shadow: 4px 4px 0px #E1306C;
+    border-image: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4) 1;
+}
+#x{
+    box-shadow: 4px 4px 0px #1D9BF0;
+    border-image: linear-gradient(45deg, #000000, #222222, #1D9BF0 80%) 1;
+}
+/* DISCORD */
+#DC h2, #DC h3{
+    text-shadow: 5px 5px 3px #7289da;
+}
+#servidor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.discord{
+    background-color: #E8E8E8;
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #7289da;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.discord:hover{
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px #7289dae0;
+}
+.discord h3{
+    margin-bottom: 10px;
+    color: #2E2D2D;
+}
+.discord ul{
+    padding: 0;
+    margin: 0;
+    color: #2E2D2D;
+}
+.discord .contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15%;
+}
+.discord .contenido p{
+    flex: 1;
+}
+.lista{
+    margin-top: 8%;
+    margin-left: 5%;
+    gap: 15px;
+}
+.discord .contenido li{
+    list-style: none;
+    gap: 15px;
+}
+/* NEWSLETTER */
+#NL{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    
+}
+.newsletter{
+    border: 1.5px solid black;
+    border-radius: 25px;
+    width: 95%;
+    height: 90%;
+    padding-bottom: 1%;
+}
+#NL .contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 15%;
+    padding: 5%;
+}
+#NL img{
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    z-index: 50;
+}
+
+/* COLABORACIONES */
+#colaboraciones img{
+    width: 50%;
+}
+.colabo{
+    border: 1.5px solid black;
+    border-radius: 30px 0 30px 0;
+    gap: 5%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    box-shadow: 4px 4px 10px #4f4f4f;
+    justify-content: safe;
+    height: 10%;
+}
+.derecha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.derecha img{
+    padding-left: 45%;
+    margin-bottom: 5%;
+}
+.colabos{
+    border: 1.5px solid black;
+    border-radius: 0 30px 0 30px;
+    gap: 5%;
+    margin-bottom: 2%;
+    padding: 1%;
+    box-shadow: -4px 4px 10px #4F4F4F;
+}
+.izquierda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.izquierda img{
+    padding-right: 45%;
+    margin-bottom: 5%;
+}
+/* CALENDARIO */
+#eventos{
+    margin-bottom: 15px;
+    gap: 15%;
+}
+.evento{
+    border: 1.5px solid black;
+    border-radius: 15px;
+    margin-bottom: 2.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1.5%;
+    
+}
+#eventos em{
+    text-decoration: underline;
+}
+#calor {
+    box-shadow: 0 0 20px 5px rgba(255, 140, 0, 0.5), 0 0 40px 10px rgba(255, 200, 0, 0.3);
+    background: linear-gradient(135deg, #f4e2c7, #e7b26f, #d97a3e);
+    filter: blur(0.5px);
+    transition: filter 0.3s ease-in-out; 
+}
+#frio {
+    box-shadow: 0 0 20px 10px rgba(173, 216, 230, 0.733);
+    background: linear-gradient(135deg, #e0f0ff, #a0d8ff, #d0e8f8);
+    filter: blur(0.5px);
+}
+#humo{
+    box-shadow: 1px 1px 10px#000000;
+}
+#doritos{
+    box-shadow: 1px 1px 10px#000000;
+}
+#halloween {
+    box-shadow: 0 0 20px 5px rgba(255,0,0,0.3);
+    background: linear-gradient(-5deg, #1a0a0ab6, #be6b1cb6, #ff6600b6);
+    filter: blur(0.5px);
+}
+#navidad {
+    box-shadow: 0 0 15px 5px rgba(255,223,0,0.5);
+    background: linear-gradient(135deg, #199600b2, #b92424c0, #ffbb00c0);
+    filter: blur(0.5px);
+}
+#sad{
+    box-shadow: 1px 1px 10px#000000;
+}
