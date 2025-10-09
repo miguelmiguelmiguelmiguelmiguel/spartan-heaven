@@ -57,3 +57,27 @@ div{
 #pd h3 {
     margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+    #pf {
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(3, auto);   /* 3 filas */
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #pf div {
+        padding: 15px;
+        font-size: 14px; /* Ajusta tamaño si quieres */
+    }
+    #pd {
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(3, auto);   /* 3 filas */
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #pd div {
+        padding: 15px;
+        font-size: 14px; /* Ajusta tamaño si quieres */
+    }
+}
