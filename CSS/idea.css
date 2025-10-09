@@ -31,3 +31,10 @@ li{
     flex: 1;        
     padding: 15px;
 }
+@media (min-width: 1000px) {
+    main p {
+        font-size: 1.2rem; /* Aumenta el tamaño del texto solo en móvil */
+        line-height: 1.5;  /* Opcional: mejora legibilidad */
+    }
+    
+}
