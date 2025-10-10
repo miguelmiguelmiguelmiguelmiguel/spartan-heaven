@@ -43,15 +43,40 @@ h2, h3{
     padding: 20px;
     background: #f8f9fa;
     box-shadow: 0 3px 20px #2E2D2D;
-    transition: transform 0.8s ease, box-shadow 0.5s ease;
-}
-.valors:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px #2e2d2dad;
-    border: 1.5px solid #2E2D2D;
+    transition: transform 0.8s ease, box-shadow 1s ease;
 }
 .valors h3{
     text-decoration: underline;
+}
+#transparencia:hover{
+    box-shadow: 0 6px 20px #AEE7F8;
+    transform: translateY(-5px); 
+    border: 1.5px solid #aee7f8;
+}
+#flexibilidad:hover{
+    box-shadow: 0 6px 20px #A8D5BA;
+    transform: translateY(-5px); 
+    border: 1.5px solid #A8D5BA;
+}
+#nt:hover{
+    box-shadow: 0 6px 20px #D4A373;
+    transform: translateY(-5px); 
+    border: 1.5px solid #D4A373;
+}
+#ef:hover{
+    box-shadow: 0 6px 20px #6DA67A;
+    transform: translateY(-5px); 
+    border: 1.5px solid #6DA67A;
+}
+#renfe:hover{
+    box-shadow: 0 6px 20px #E8A6A1;
+    transform: translateY(-5px); 
+    border: 1.5px solid #E8A6A1;
+}
+#calite:hover{
+    box-shadow: 0 6px 20px #2C3E50;
+    transform: translateY(-5px); 
+    border: 1.5px solid #2C3E50;
 }
 .time{
     display: flex;                 

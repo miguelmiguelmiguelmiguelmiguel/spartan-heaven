@@ -9,6 +9,9 @@ body{
     color: rgb(64, 64, 64);
     font-family: 'League Spartan', 'special elite';
 }
+h1, h2, h3, h4, h5, h6{
+    text-decoration: underline;
+}
 h1, h2, h3, strong{
     color: rgb(42, 42, 42);
     font-family: 'League Spartan' Arial, Helvetica;
