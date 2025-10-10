@@ -103,9 +103,29 @@ h2, h3{
     margin: 0;
 }
 .time img{
-    width: 100px;                  
+    width: 25%;                  
     border-radius: 10px;
 }
 .time a{
     text-shadow: 0.1px 0.1px #ff0000;
+}
+#previo:hover{
+    box-shadow: 0 6px 20px #FF6F00;
+    transform: translateY(-5px); 
+    border: 1.5px solid #FF6F00;
+}
+#corto:hover{
+    box-shadow: 0 6px 20px #F4511E;
+    transform: translateY(-5px); 
+    border: 1.5px solid #F4511E;
+}
+#medio:hover{
+    box-shadow: 0 6px 20px #0288D1;
+    transform: translateY(-5px); 
+    border: 1.5px solid #0288D1;
+}
+#largo:hover{
+    box-shadow: 0 6px 20px #388E3C;
+    transform: translateY(-5px); 
+    border: 1.5px solid #388E3C;
 }
