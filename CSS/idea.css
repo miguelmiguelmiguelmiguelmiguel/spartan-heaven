@@ -15,6 +15,7 @@ li{
 #pyc{
     border-style: none;              
     height: 100%;
+    padding-top: 0%;
 }
 .mcetpm {
     border: none;
