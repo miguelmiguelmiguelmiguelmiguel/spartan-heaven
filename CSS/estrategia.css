@@ -34,7 +34,7 @@ p{
     text-align: left;
 }
 #tiktok{
-    box-shadow: 4px 4px 0px black;
+    box-shadow: 4px 4px 0px black, 8px 6px 10px #ff0050, 8px 6px 10px #ff0050;
     border-image: linear-gradient(45deg, #ff0050, #00f2ea) 1;
 }
 #youtube{
