@@ -57,6 +57,15 @@ h1, h2{
     list-style: url("../imagenes/ridler.png");
     padding: 2%;
 }
+.imagen-mockup{
+    border: none;
+    text-align: right;
+}
+.imagen-mockup img{
+    width: 75%;
+    height: 100%;
+    border-radius: 15px;
+}
 @media screen and (max-width: 768px) {
     #productos {
         display: grid;

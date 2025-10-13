@@ -1,3 +1,6 @@
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D*/
 h2, h3{
     text-align: center;
     text-decoration: underline;
@@ -41,50 +44,123 @@ h2, h3{
     border-radius: 25px;
     text-align: center;
     padding: 20px;
-    background: #f8f9fa;
     box-shadow: 0 3px 20px #2E2D2D;
     transition: transform 0.8s ease, box-shadow 1s ease;
 }
 .valors h3{
     text-decoration: underline;
 }
-#transparencia:hover{
-    box-shadow: 0 6px 20px #AEE7F8;
-    transform: translateY(-5px); 
+/*GLOW EFFECTS*/
+#transparencia {
+    color: #E8E8E8;     
     border: 1.5px solid #aee7f8;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
-#flexibilidad:hover{
-    box-shadow: 0 6px 20px #A8D5BA;
-    transform: translateY(-5px); 
+#transparencia:hover {
+    background: #aee7f88b;           
+    color: #2E2D2D;                   
+    border-color: #00c3ff;          
+    box-shadow: 0 6px 20px #AEE7F8; 
+    transform: translateY(-5px);    
+}
+#transparencia:hover h3, #transparencia:hover p {
+    text-shadow: 0 0 10px #0080ff;
+}
+#flexibilidad {
+    color: #E8E8E8;
     border: 1.5px solid #A8D5BA;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
-#nt:hover{
-    box-shadow: 0 6px 20px #D4A373;
-    transform: translateY(-5px); 
+#flexibilidad:hover {
+    background: #A8D5BA8b;
+    color: #2E2D2D;
+    border-color: #6bd196;
+    box-shadow: 0 6px 20px #A8D5BA;
+    transform: translateY(-5px);
+}
+#flexibilidad:hover h3, #flexibilidad:hover p {
+    text-shadow: 0 0 10px #00ff6a;
+}
+#nt{
+    color: #E8E8E8;
     border: 1.5px solid #D4A373;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
-#ef:hover{
-    box-shadow: 0 6px 20px #6DA67A;
-    transform: translateY(-5px); 
+#nt:hover {
+    background: #D4A3738b;
+    color: #2E2D2D;
+    border-color: #D4A373;
+    box-shadow: 0 6px 20px #D4A373;
+    transform: translateY(-5px);
+}
+#nt:hover h3, #nt:hover p {
+    text-shadow: 0 0 10px #ff8000;
+}
+#ef {
+    color: #E8E8E8;
     border: 1.5px solid #6DA67A;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
-#renfe:hover{
-    box-shadow: 0 6px 20px #E8A6A1;
-    transform: translateY(-5px); 
+#ef:hover {
+    background: #6DA67A8b;
+    color: #2E2D2D;
+    border-color: #6DA67A;
+    box-shadow: 0 6px 20px #6DA67A;
+    transform: translateY(-5px);
+}
+#ef:hover h3, #ef:hover p {
+    text-shadow: 0 0 10px #00ff3c;
+}
+#renfe {
+    color: #E8E8E8;
     border: 1.5px solid #E8A6A1;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
-#calite:hover{
-    box-shadow: 0 6px 20px #2C3E50;
-    transform: translateY(-5px); 
+#renfe:hover {
+    background: #E8A6A18b;
+    color: #2E2D2D;
+    border-color: #E8A6A1;
+    box-shadow: 0 6px 20px #E8A6A1;
+    transform: translateY(-5px);
+}
+#renfe:hover h3, #renfe:hover p {
+    text-shadow: 0 0 10px #ff1100;
+}
+#calite {
+    color: #E8E8E8;
     border: 1.5px solid #2C3E50;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.8s ease;
 }
+#calite:hover {
+    background: #2C3E508b;
+    color: #f8f9fa;
+    border-color: #2C3E50;
+    box-shadow: 0 6px 20px #2C3E50;
+    transform: translateY(-5px);
+}
+#calite:hover h3, #calite:hover p {
+    text-shadow: 0 0 10px #0080ff;
+}
+/*OBJETIVOS EN EL TIEMPO*/
 .time{
     display: flex;                 
     justify-content: space-evenly; 
     align-items: center;           
     border: px solid #000;        
     border-radius: 15px;
-    margin: 15px 0;
+    margin: 25px 0;
     padding: 15px;
     gap: 20px;      
     box-shadow: 0 3px 20px #2E2D2D;
