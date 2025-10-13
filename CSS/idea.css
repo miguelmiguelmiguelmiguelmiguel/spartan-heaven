@@ -4,13 +4,15 @@ div{
     padding: 5px 20px 3px 10px;
     margin: 15px;
 }
-.valor{
-    display: flex;
-    justify-content: space-between;
+#valor {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales en escritorio */
+    gap: 20px; /* Espacio entre columnas */
+    padding: 15px;
 }
-li{
-    list-style: none;
-    padding-bottom: 10px;
+.valor {
+    padding: 15px;
 }
 #pyc{
     border-style: none;              
@@ -32,10 +34,13 @@ li{
     flex: 1;        
     padding: 15px;
 }
-@media (min-width: 1000px) {
-    main p {
-        font-size: 1.2rem; /* Aumenta el tamaño del texto solo en móvil */
-        line-height: 1.5;  /* Opcional: mejora legibilidad */
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px) {
+    #valor {
+        grid-template-columns: 1fr;
+        margin: 2%; 
     }
-    
+    #pyc{
+        padding: 15px;
+    }
 }
