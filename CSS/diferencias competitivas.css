@@ -21,6 +21,7 @@ div{
 }
 
 #pf div:hover {
+    background-color: rgba(46, 197, 0, 0.055);
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(46, 197, 0, 0.575);
 }
@@ -50,6 +51,7 @@ div{
 }
 
 #pd div:hover {
+    background-color: rgba(146, 0, 0, 0.055);
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(146, 0, 0, 0.555);
 }
