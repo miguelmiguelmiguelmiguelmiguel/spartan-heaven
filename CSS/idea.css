@@ -8,7 +8,9 @@ div{
     border: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 15px;
+    padding: 1%;
+    margin: 1%;
+    
 }
 .valor {
     padding: 15px;
@@ -16,14 +18,17 @@ div{
 #pyc{
     border-style: none;              
     height: 100%;
-    padding-top: 0%;
+    margin: 1%;
 }
 .mcetpm {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 5%; 
-    align-items: start; 
+    align-items: start;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
 }
 #pyc img{
     width: 100%;
@@ -31,7 +36,7 @@ div{
 .pyc{
     border-style:none;
     flex: 1;        
-    padding: 15px;
+    padding: 1%;
 }
 /*VISTA MOVIL*/
 @media screen and (max-width: 1000px) {
@@ -39,6 +44,12 @@ div{
         grid-template-columns: 1fr; 
     }
     #pyc{
-        padding: 15px;
+        padding: 1%;
+    }
+    .mcetpm{
+        display: block;
+    }
+    .mcetpm ul{
+        padding-left: 2%;
     }
 }
