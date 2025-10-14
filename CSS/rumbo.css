@@ -234,7 +234,7 @@ h2, h3{
   71% { transform: skewX(2deg) skewY(-1deg); }
 }
 .time a{
-    text-shadow: 0.1px 0.1px #ff0000;
+    text-shadow: 0.3px 0.3px #ff00005a;
 }
 /*hover*/
 #previo:hover{
@@ -276,5 +276,11 @@ h2, h3{
     }
         #valors{
             grid-template-columns: 1fr;
+    }
+        .time{
+            display: block;
+    }
+        .time img{
+            width: 100%;
     }
 }
