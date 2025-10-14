@@ -26,3 +26,12 @@ div{
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px){
+    #money{
+      display: block;
+    }
+    .money{
+      margin: 5%;
+    }
+}

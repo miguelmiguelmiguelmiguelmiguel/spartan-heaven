@@ -188,7 +188,6 @@ p{
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 1.5%;
-    
 }
 #eventos em{
     text-decoration: underline;
@@ -222,4 +221,46 @@ p{
 }
 #sad{
     box-shadow: 1px 1px 10px#000000;
+}
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px) {
+    /*RRSS*/
+    #redes-sociales{
+        display: block;
+    }
+    .RRSS{
+        margin-bottom: 8%;
+    }
+    /*DISCORD*/
+    #servidor{
+        display: block;
+    }
+    .discord{
+        margin-bottom: 8%;
+    }
+    /*NEWLETTER*/
+    #NL {
+        display: block;
+    }
+    .newsletter{
+        margin: 5%;
+    }
+    #NL .newsletter .contenido p,
+    #NL .newsletter .contenido img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    /*COLABORACIONES*/
+    .derecha{
+        display: block;
+        margin: 2%;
+    }
+    .derecha img{
+        width: 100%;
+    }
+    /*CALENDARIO*/
+    .evento{
+        margin-bottom: 10%;
+    }
 }
