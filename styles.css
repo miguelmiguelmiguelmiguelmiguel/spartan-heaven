@@ -99,12 +99,13 @@ ul.desplegable li{
 }
 ul.desplegable a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #2E2D2D;
     text-transform: capitalize;
     font-size: 1.5em;
     padding: 0.2em 0.3em;
 }
 ul.desplegable a:hover{
+    
     color:#e8e8e883 ;
     background-color: #2E2D2D;
 }
