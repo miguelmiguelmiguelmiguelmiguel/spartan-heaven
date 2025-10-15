@@ -95,6 +95,9 @@ h1, h2{
     .texto {
         width: 100%;
     }
+    .texto li{
+        text-align: left;
+    }
     #cajita,
     #cajita * {
         margin-right: 0;
