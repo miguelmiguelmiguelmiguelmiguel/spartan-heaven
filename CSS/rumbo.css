@@ -283,7 +283,4 @@ h2, h3{
         .time img{
             width: 100%;
     }
-    input:checked ~ .light-button{
-        display: none;
-    }
 }

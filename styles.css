@@ -49,59 +49,6 @@ header img {
     margin: 0 auto;         
 }
 /*barra de navegacion*/
-/*mantienen el codigo para que no se vaya a la puta*/
-.light-button button.bt {
-  position: relative;
-  height: 200px;
-  display: flex;
-  align-items: flex-end;
-  border: none;
-  background: none;
-  cursor: pointer;
-  outline: none;
-}
-/*mantienen el codigo para que no se vaya a la puta*/
-.light-button button.bt .button-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-}
-/*mantienen el codigo para que no se vaya a la puta*/
-.light-button button.bt .light-holder {
-  position: absolute;
-  width: 100px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-/*lo que se va a iluminar*/
-.light-button button.bt .button-holder h1 {
-  color: #2E2D2D;
-  transition: color 0.3s;
-}
-/*lo que se ilumina*/
-.light-button button.bt:hover .button-holder h1 {
-  color: #E8E8E8;
-}
-/*la luz*/
-.light-button button.bt .light-holder .light {
-  position: absolute;
-  top: 0;
-  width: 200px;  
-  height: 200px;  
-  clip-path: polygon(50% 0%, 25% 100%, 75% 100%); 
-  background: linear-gradient(
-    180deg,
-    #E8E8E8 0%,
-    #2e2d2d00 80%
-  );
-  transform-origin: 0% 0%; 
-  animation: light-parpadeo 1.8s infinite alternate, sway 5.8s infinite alternate ease-in-out;
-}
 nav{
     padding: 10px 20px;
     display: flex;
@@ -116,20 +63,6 @@ nav{
 nav img{
     height: 75px;
     width: 75px;   
-}
-#linterna {
-    position: relative;
-}
-
-.light {
-    position: absolute;
-    width: 200px;  /* tamaño del cono de luz */
-    height: 200px;
-    border-radius: 50%;
-    pointer-events: none;
-    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 80%);
-    transform: translate(-50%, -50%);
-    transition: top 0.1s, left 0.1s; /* suaviza el movimiento */
 }
 nav ul{
     display: flex;
@@ -161,7 +94,6 @@ nav li a:hover{
 }
 input:checked ~ .desplegable{
     display: block;
-    height: 35vh;
 }
 ul.desplegable{
     padding: 0;
@@ -215,41 +147,6 @@ footer{
 }
 #bulb{
     animation: parpadeo 1.2s infinite;
-}
-@keyframes light-button {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    opacity: 1;
-  }
-  20%, 22%, 24%, 55% {
-    opacity: 0.8;
-  }
-}
-@keyframes light-parpadeo {
-  0% {
-    opacity: 0.85;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.9;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.88;
-  }
-  100% {
-    opacity: 0.85;
-  }
-}
-@keyframes sway {
-  0%   { transform: translateY(0) rotate(0deg); }
-  25%  { transform: translateY(3px) rotate(1deg); }
-  50%  { transform: translateY(-2px) rotate(-1deg); }
-  75%  { transform: translateY(2px) rotate(1deg); }
-  100% { transform: translateY(0) rotate(0deg); }
 }
 @keyframes parpadeo {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {

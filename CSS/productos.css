@@ -1,17 +1,8 @@
-.light-button button.bt .light-holder .light {
-  position: absolute;
-  top: 0;
-  width: 275px;  
-  height: 200px;  
-  clip-path: polygon(50% 0%, 25% 100%, 75% 100%); 
-  background: linear-gradient(
-    180deg,
-    #E8E8E8 0%,
-    #2e2d2d00 80%
-  );
-  transform-origin: 0% 0%; 
-  animation: light-parpadeo 1.8s infinite alternate, sway 5.8s infinite alternate ease-in-out;
-}
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
 img{
     width: 30%;
     height: 30%;
@@ -119,8 +110,5 @@ h1, h2{
         color: inherit !important;
         list-style: disc !important; /* o como quieras que aparezca por defecto */
         transition: none !important;
-    }
-    input:checked ~ .light-button{
-        display: none;
     }
 }
