@@ -1,6 +1,16 @@
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
+
+/*por si no sale bien*/
+nav h1{
+    display: none;
+}
 div{
     border: 1.5px black;
-    border-style:solid;
+    border-style:soli;
     padding: 5px 20px 3px 10px;
     margin: 15px;
 }
@@ -40,6 +50,9 @@ div{
 }
 /*VISTA MOVIL*/
 @media screen and (max-width: 1000px) {
+    nav h1{
+        display: block;
+    }
     #valor {
         grid-template-columns: 1fr; 
     }
@@ -51,5 +64,8 @@ div{
     }
     .mcetpm ul{
         padding-left: 2%;
+    }
+    input:checked ~ .light-button{
+        display: none;
     }
 }

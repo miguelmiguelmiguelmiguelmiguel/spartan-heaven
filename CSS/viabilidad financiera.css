@@ -1,7 +1,21 @@
-div{
-    border: 1.5px solid black;
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 350px;  
+  height: 225px;  
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%); 
+  background: linear-gradient(
+    180deg,
+    #E8E8E8 0%,
+    #2e2d2d00 80%
+  );
+  transform-origin: 0% 0%; 
+  animation: light-parpadeo 1.8s infinite alternate, sway 5.8s infinite alternate ease-in-out;
 }
-#money{
+.money{
+  border: 1.5px solid black;
+}
+#money{  
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2x2 */
   gap: 20px; /* separaciones */
@@ -33,5 +47,8 @@ div{
     }
     .money{
       margin: 5%;
+    }
+    input:checked ~ .light-button{
+        display: none;
     }
 }

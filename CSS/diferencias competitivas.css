@@ -1,3 +1,17 @@
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 350px;  
+  height: 225px;  
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%); 
+  background: linear-gradient(
+    180deg,
+    #E8E8E8 0%,
+    #2e2d2d00 80%
+  );
+  transform-origin: 0% 0%; 
+  animation: light-parpadeo 1.8s infinite alternate, sway 5.8s infinite alternate ease-in-out;
+}
 div{
     border: 1.5px soli black;
 }
@@ -81,5 +95,8 @@ div{
     #pd div {
         padding: 15px;
         font-size: 14px; /* Ajusta tamaño si quieres */
+    }
+    input:checked ~ .light-button{
+        display: none;
     }
 }

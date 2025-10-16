@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Special+Elite&display=swap');/*fuente externa*/
 
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
+
 /*lo que se ve*/
 body{  
     margin: 0;
@@ -42,8 +48,60 @@ header img {
     height: auto;           
     margin: 0 auto;         
 }
-
 /*barra de navegacion*/
+/*mantienen el codigo para que no se vaya a la puta*/
+.light-button button.bt {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+/*mantienen el codigo para que no se vaya a la puta*/
+.light-button button.bt .button-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+/*mantienen el codigo para que no se vaya a la puta*/
+.light-button button.bt .light-holder {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*lo que se va a iluminar*/
+.light-button button.bt .button-holder h1 {
+  color: #2E2D2D;
+  transition: color 0.3s;
+}
+/*lo que se ilumina*/
+.light-button button.bt:hover .button-holder h1 {
+  color: #E8E8E8;
+}
+/*la luz*/
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 200px;  
+  height: 200px;  
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%); 
+  background: linear-gradient(
+    180deg,
+    #E8E8E8 0%,
+    #2e2d2d00 80%
+  );
+  transform-origin: 0% 0%; 
+  animation: light-parpadeo 1.8s infinite alternate, sway 5.8s infinite alternate ease-in-out;
+}
 nav{
     padding: 10px 20px;
     display: flex;
@@ -89,6 +147,7 @@ nav li a:hover{
 }
 input:checked ~ .desplegable{
     display: block;
+    height: 35vh;
 }
 ul.desplegable{
     padding: 0;
@@ -105,7 +164,6 @@ ul.desplegable a{
     padding: 0.2em 0.3em;
 }
 ul.desplegable a:hover{
-    
     color:#e8e8e883 ;
     background-color: #2E2D2D;
 }
@@ -144,6 +202,41 @@ footer{
 #bulb{
     animation: parpadeo 1.2s infinite;
 }
+@keyframes light-button {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.8;
+  }
+}
+@keyframes light-parpadeo {
+  0% {
+    opacity: 0.85;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.88;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+@keyframes sway {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(3px) rotate(1deg); }
+  50%  { transform: translateY(-2px) rotate(-1deg); }
+  75%  { transform: translateY(2px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
 @keyframes parpadeo {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
@@ -175,11 +268,7 @@ footer{
     .desplegable{
         display: flex;
     }
-    ul.desplegable a:hover{
-        color:#e8e8e883 ;
-        background-color: #2E2D2D;
-    }
     input:checked ~ .desplegable{
-        display: block;
+        display: flex;
     }
 }
