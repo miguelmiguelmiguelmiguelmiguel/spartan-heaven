@@ -94,6 +94,7 @@ nav li a:hover{
 }
 input:checked ~ .desplegable{
     display: block;
+    background-color: #8b4e3269;
 }
 ul.desplegable{
     padding: 0;
@@ -169,6 +170,7 @@ footer{
         position: sticky; /*hacer que la barra de navegacion se mantenga arriba cuando bajes*/
         top: 0px;
         background-color:#8b4e32;
+        z-index: 101;
     }
     nav input{
         display: none;
@@ -181,5 +183,9 @@ footer{
     }
     input:checked ~ .desplegable{
         display: flex;
+    }
+    input:checked ~ #menu{
+        display: flex;
+        background-color: #8b4e3200 ;
     }
 }

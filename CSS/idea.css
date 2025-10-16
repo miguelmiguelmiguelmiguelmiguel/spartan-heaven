@@ -10,7 +10,7 @@ nav h1{
 }
 
 div{
-    border: 1.5px black;
+    border: 1.5px solid black;
     border-style:soli;
     padding: 5px 20px 3px 10px;
     margin: 15px;
@@ -66,4 +66,5 @@ div{
     .mcetpm ul{
         padding-left: 2%;
     }
+    
 }
