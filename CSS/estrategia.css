@@ -1,3 +1,8 @@
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
 div{
     border: 1.5px soli black;
 }
@@ -34,20 +39,32 @@ p{
     text-align: left;
 }
 #tiktok{
-    box-shadow: 4px 4px 0px black;
+    box-shadow: 4px 4px 0px black, 8px 6px 10px #ff0050, -4px -3px 10px #00f2ea;
     border-image: linear-gradient(45deg, #ff0050, #00f2ea) 1;
 }
 #youtube{
-    box-shadow: 4px 4px 0px #ff0000;
+    box-shadow: 4px 4px 0px #ff0000, 8px 6px 10px #ff0000, -4px -3px 10px #000000;
     border-image: linear-gradient(45deg, #ff0000, #000000) 1;
 }
 #instagram{
-    box-shadow: 4px 4px 0px #E1306C;
+    box-shadow: 4px 4px 0px #E1306C, 8px 6px 10px #dd2a7b, -4px -3px 10px #8134af;
     border-image: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4) 1;
 }
 #x{
-    box-shadow: 4px 4px 0px #1D9BF0;
+    box-shadow: 4px 4px 0px #1D9BF0, 8px 6px 10px #1D9BF0, -4px -3px 10px #222222;
     border-image: linear-gradient(45deg, #000000, #222222, #1D9BF0 80%) 1;
+}
+#tiktok h3{
+    text-shadow: 8px 6px 15px #ff0050, -4px -3px 15px #00f2ea;
+}
+#youtube h3{
+    text-shadow: 8px 6px 15px #ff0000, -4px -3px 15px #000000;
+}
+#instagram h3{
+    text-shadow: 8px 6px 15px #dd2a7b, -4px -3px 15px #8134af;
+}
+#x h3{
+    text-shadow: 8px 6px 15px #1D9BF0, -4px -3px 15px #222222;
 }
 /* DISCORD */
 #DC h2, #DC h3{
@@ -137,7 +154,14 @@ p{
 
 /* COLABORACIONES */
 #colaboraciones img{
-    width: 50%;
+    width: 85%;
+    padding-left: 1%;
+}
+#colaboraciones ul{
+    list-style-image: url(../imagenes/logo\ chico.png);
+}
+#colaboraciones p{
+    padding-right: 3%;
 }
 .colabo{
     border: 1.5px solid black;
@@ -151,26 +175,10 @@ p{
 }
 .derecha{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .derecha img{
     padding-left: 45%;
-    margin-bottom: 5%;
-}
-.colabos{
-    border: 1.5px solid black;
-    border-radius: 0 30px 0 30px;
-    gap: 5%;
-    margin-bottom: 2%;
-    padding: 1%;
-    box-shadow: -4px 4px 10px #4F4F4F;
-}
-.izquierda{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.izquierda img{
-    padding-right: 45%;
     margin-bottom: 5%;
 }
 /* CALENDARIO */
@@ -185,7 +193,6 @@ p{
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 1.5%;
-    
 }
 #eventos em{
     text-decoration: underline;
@@ -219,4 +226,46 @@ p{
 }
 #sad{
     box-shadow: 1px 1px 10px#000000;
+}
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px) {
+    /*RRSS*/
+    #redes-sociales{
+        display: block;
+    }
+    .RRSS{
+        margin-bottom: 8%;
+    }
+    /*DISCORD*/
+    #servidor{
+        display: block;
+    }
+    .discord{
+        margin-bottom: 8%;
+    }
+    /*NEWLETTER*/
+    #NL {
+        display: block;
+    }
+    .newsletter{
+        margin: 5%;
+    }
+    #NL .newsletter .contenido p,
+    #NL .newsletter .contenido img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    /*COLABORACIONES*/
+    .derecha{
+        display: block;
+        margin: 2%;
+    }
+    .derecha img{
+        width: 100%;
+    }
+    /*CALENDARIO*/
+    .evento{
+        margin-bottom: 10%;
+    }
 }

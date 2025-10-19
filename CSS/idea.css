@@ -1,28 +1,45 @@
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
+
+/*por si no sale bien*/
+nav h1{
+    display: none;
+}
+
 div{
-    border: 1.5px black;
-    border-style:solid;
+    border: 1.5px solid black;
+    border-style:soli;
     padding: 5px 20px 3px 10px;
     margin: 15px;
 }
-.valor{
-    display: flex;
-    justify-content: space-between;
+#valor {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1%;
+    margin: 1%;
+    
 }
-li{
-    list-style: none;
-    padding-bottom: 10px;
+.valor {
+    padding: 15px;
 }
 #pyc{
     border-style: none;              
     height: 100%;
-    padding-top: 0%;
+    margin: 1%;
 }
 .mcetpm {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 5%; 
-    align-items: start; 
+    align-items: start;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
 }
 #pyc img{
     width: 100%;
@@ -30,12 +47,24 @@ li{
 .pyc{
     border-style:none;
     flex: 1;        
-    padding: 15px;
+    padding: 1%;
 }
-@media (min-width: 1000px) {
-    main p {
-        font-size: 1.2rem; /* Aumenta el tamaño del texto solo en móvil */
-        line-height: 1.5;  /* Opcional: mejora legibilidad */
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px) {
+    nav h1{
+        display: block;
+    }
+    #valor {
+        grid-template-columns: 1fr; 
+    }
+    #pyc{
+        padding: 1%;
+    }
+    .mcetpm{
+        display: block;
+    }
+    .mcetpm ul{
+        padding-left: 2%;
     }
     
 }

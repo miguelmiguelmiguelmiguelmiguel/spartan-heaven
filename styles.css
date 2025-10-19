@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Special+Elite&display=swap');/*fuente externa*/
 
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
+
 /*lo que se ve*/
 body{  
     margin: 0;
@@ -42,7 +48,6 @@ header img {
     height: auto;           
     margin: 0 auto;         
 }
-
 /*barra de navegacion*/
 nav{
     padding: 10px 20px;
@@ -81,7 +86,10 @@ nav li a:hover{
     color:#e8e8e883 ;
     background-color: #2E2D2D;
 }
+<<<<<<< HEAD
 /*VISTA MÓVIL NAV*/
+=======
+>>>>>>> 9c2668e081ed8cda53bebfe624031c828ada65a0
 #menu{
     display: none;
 }
@@ -90,6 +98,7 @@ nav li a:hover{
 }
 input:checked ~ .desplegable{
     display: block;
+    background-color: #8b4e3269;
 }
 ul.desplegable{
     padding: 0;
@@ -100,7 +109,7 @@ ul.desplegable li{
 }
 ul.desplegable a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #2E2D2D;
     text-transform: capitalize;
     font-size: 1.5em;
     padding: 0.2em 0.3em;
@@ -221,7 +230,7 @@ footer{
     box-shadow: 0 0 20px #fff200, 0 0 40px #fff200;
   }
   20%, 22%, 24%, 55% {
-    opacity: 0.2;
+    opacity: 0.8;
     box-shadow: 0 0 5px #fff200, 0 0 10px #fff200;
   }
 }
@@ -236,6 +245,7 @@ footer{
         position: sticky; /*hacer que la barra de navegacion se mantenga arriba cuando bajes*/
         top: 0px;
         background-color:#8b4e32;
+        z-index: 101;
     }
     nav input{
         display: none;
@@ -246,11 +256,11 @@ footer{
     .desplegable{
         display: flex;
     }
-    ul.desplegable a:hover{
-        color:#e8e8e883 ;
-        background-color: #2E2D2D;
-    }
     input:checked ~ .desplegable{
-        display: block;
+        display: flex;
+    }
+    input:checked ~ #menu{
+        display: flex;
+        background-color: #8b4e3200 ;
     }
 }

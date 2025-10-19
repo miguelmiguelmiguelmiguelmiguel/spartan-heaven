@@ -1,7 +1,12 @@
-div{
-    border: 1.5px solid black;
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
+.money{
+  border: 1.5px solid black;
 }
-#money{
+#money{  
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2x2 */
   gap: 20px; /* separaciones */
@@ -25,4 +30,13 @@ div{
 .money:hover{
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+/*VISTA MOVIL*/
+@media screen and (max-width: 1000px){
+    #money{
+      display: block;
+    }
+    .money{
+      margin: 5%;
+    }
 }

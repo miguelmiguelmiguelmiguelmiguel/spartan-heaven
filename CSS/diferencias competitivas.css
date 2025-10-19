@@ -1,3 +1,8 @@
+/*COSAS A TENER EN CUENTA
+COLOR BLANCO SUCIO: #E8E8E8
+COLOR NEGRO  SUCIO: #2E2D2D
+COLOR MARRON OXIDO: #8B4E32
+*/
 div{
     border: 1.5px soli black;
 }
@@ -21,6 +26,7 @@ div{
 }
 
 #pf div:hover {
+    background-color: rgba(46, 197, 0, 0.055);
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(46, 197, 0, 0.575);
 }
@@ -50,6 +56,7 @@ div{
 }
 
 #pd div:hover {
+    background-color: rgba(146, 0, 0, 0.055);
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(146, 0, 0, 0.555);
 }
