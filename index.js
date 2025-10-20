@@ -1,41 +1,76 @@
+// Seleccionamos toggle y elementos
 let toggle = document.getElementById('modo');
+if (toggle) {
+  let tema = document.getElementById('tema');
+  let body = document.body;
+  let titulos = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  let texto = document.querySelectorAll('p, li, em');
+  let negrita = document.querySelectorAll('strong');
+  let header = document.querySelector('header');
 
-let tema = document.querySelector('.slider #tema'); // TEXTO DE "CLARO" Y "OSCURO"
+  function activarModoOscuro() { //----------MODO OSCURO
+    //SWITCH
+    if (tema) {
+      tema.textContent = "Oscuro";
+      tema.style.left = "-38%";
+      tema.style.color = "#1a1918";
+      tema.style.textShadow = "2px 2px 5px #2E2D2D";
+      tema.style.opacity = "1";
+    }
+    //PAGINA
+    aplicarEstilosPaginaOscuro();
+  }
 
-// Cuando cambie el estado del checkbox
-toggle.addEventListener('change', () => {
-  if (toggle.checked) {
-    tema.textContent = "Oscuro"; // si está activado, pone "Oscuro"
-    tema.style.left = "-50%";
-    tema.style.color = "#1a1918";
-    
+  function activarModoClaro() { //----------MODO CLARO
+    //SWITCH
+    if (tema) {
+      tema.textContent = "Claro";
+      tema.style.left = "10%";
+      tema.style.color = "#e0e0e0";
+    }
+    //PAGINA
+    aplicarEstilosPaginaClaro();
+  }
+
+  //---------PAGINA EN MODO OSCURO
+
+  function aplicarEstilosPaginaOscuro() {
+    if (body) body.style.backgroundColor = "#1a1a1a"; //FONDO PAGINA
+    titulos.forEach(t => t.style.color = "#e8e8e8"); //TITULOS (H1.......H6)
+    texto.forEach(t => t.style.color = "#e8e8e8"); //TEXTOS (P)
+    negrita.forEach(n => n.style.color = "#ffffffff"); //NEGRITA (STRONG)
+    if (header) header.style.backgroundImage = "url('../imagenes/fondo oscuro.png')"; //FONDO HEADER
+  }
+
+  //PAGINA EN MODO CLARO
+
+  function aplicarEstilosPaginaClaro() {
+    if (body) body.style.backgroundColor = "#e8e8e8c8"; //FONDO PAGINA
+
+    titulos.forEach(t => t.style.color = "#2E2D2D"); //TITULOS (H1.......H6)
+    texto.forEach(t => t.style.color = "#2E2D2D"); //TEXTOS (P)
+    negrita.forEach(n => n.style.color = ""); //NEGRITA (STRONG)
+    if (header) header.style.backgroundImage = "url('../imagenes/fondo claro.png')"; //FONDO HEADER
+  }
+
+  // Aplicar al cargar según LocalStorage
+  const modoGuardado = localStorage.getItem('modoOscuro');
+  if (modoGuardado === 'true') {
+    toggle.checked = true;
+    activarModoOscuro();
   } else {
-    tema.textContent = "Claro";   // si está desactivado, pone "Claro"
-    tema.style.left = "5%"; 
-    tema.style.color = "#e0e0e0";    
+    toggle.checked = false;
+    activarModoClaro();
   }
-});
 
-//-----CAMBIAR COLORES--------
-
-let body = document.body;
-let titulos = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-let texto = document.querySelectorAll('p');
-let negrita = document.querySelectorAll('strong');
-
-toggle.addEventListener('change', () => {
-  if (toggle.checked) { // Modo oscuro
-    body.style.backgroundColor = "#1a1a1a"; //FONDO
-    titulos.forEach(titulo => {titulo.style.color = "#f2f6ff";}); //COLOR DE TITULOS (H1....H6)
-    texto.forEach(texto => {texto.style.color = "#ffffffff";});  //COLOR DE TEXTO (P)
-    negrita.forEach(negrita => {negrita.style.color = "#ffffff";}); //COLOR DE STRONG (STRONG)
-
-  }
-  else { // Modo claro
-    body.style.backgroundColor = "#f2f6ff"; //FONDO
-    titulos.forEach(titulo => {titulo.style.color = "#323232a4";}); //COLOR DE TITULOS (H1....H6)
-    texto.forEach(texto => {texto.style.color = "#ff0000ff";}); //COLOR DE TEXTO (P)
-    negrita.forEach(negrita => {negrita.style.color = "";}); //COLOR DE STRONG (STRONG)
-
-  }
-});
+  // Cambiar al usar el toggle
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      activarModoOscuro();
+      localStorage.setItem('modoOscuro', 'true');
+    } else {
+      activarModoClaro();
+      localStorage.setItem('modoOscuro', 'false');
+    }
+  });
+}
