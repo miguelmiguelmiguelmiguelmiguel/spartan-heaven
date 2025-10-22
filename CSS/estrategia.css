@@ -157,7 +157,10 @@ p{
     padding-left: 1%;
 }
 #colaboraciones ul{
-    list-style-image: url(../imagenes/logo\ chico.png);
+    padding-right: 5%;
+}
+#colaboraciones li{
+    padding-bottom: 2%;
 }
 #colaboraciones p{
     padding-right: 3%;
@@ -194,7 +197,7 @@ p{
     padding-bottom: 1.5%;
 }
 #eventos em{
-    text-decoration: underline;
+    font-size: 20px;
 }
 #calor {
     box-shadow: 0 0 20px 5px rgba(255, 140, 0, 0.5), 0 0 40px 10px rgba(255, 200, 0, 0.3);
