@@ -7,7 +7,7 @@ COLOR MARRON OXIDO: #8B4E32
 */
 
 /*lo que se ve*/
-body, div, h1, h2, h3, h4, h5, h6, p, strong, em, li, header {
+body, h1, h2, h3, h4, h5, h6, p, strong, em, li, header {
   transition: all 1.5s ease;
 }
 body{  
@@ -27,6 +27,7 @@ p, ul, li, a{
 }
 a{
     text-decoration: none;
+    color: #2E2D2D;
 }
 /*cabecera*/
 header{ 
@@ -171,7 +172,7 @@ ul.desplegable a{
     height: 65px;
     width: 65px;
     position: fixed;
-    top: 14vh;
+    top: 11vh;
     right: 20px;
     padding: 5px;
     border: none;

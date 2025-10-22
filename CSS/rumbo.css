@@ -20,10 +20,10 @@ h2, h3{
     border: 2px solid #000;
     border-radius: 10px;
 }
-.mision{
+#mision{
     box-shadow: 8px 10px 0px #2e2d2d73;
 }
-.vision{
+#vision{
     box-shadow: -10px 10px #2e2d2d73;
 }
 #misionfoto, #visionfoto{
@@ -183,15 +183,15 @@ h2, h3{
     border-radius: 10px;
 }
 /*jejejeje*/
-.glitch {
+#glitch {
   position: relative;
   color: #2E2D2D;
   z-index: 1;
   animation: shift 1s ease-in-out infinite alternate;
 }
 
-.glitch:before,
-.glitch:after {
+#glitch:before,
+#glitch:after {
   display: block;
   content: attr(data-glitch);
   position: absolute;
@@ -199,15 +199,14 @@ h2, h3{
   left: 0;
   opacity: 0.8;
 }
-
-.glitch:before {
+#glitch:before {
   animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   color: #8E6BAF;
   z-index: -1;
   animation-delay: 1ms;
 }
 
-.glitch:after {
+#glitch:after {
   animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
   color: #5FAFB2;
   z-index: -2;
