@@ -66,7 +66,7 @@ if (toggle) {
   function aplicarEstilosPaginaOscuro() {
     //----GENERAL
     if (body) body.style.backgroundColor = "#1a1a1a"; //FONDO PAGINA
-    if (header) header.style.backgroundImage = "url('./../imagenes/fondooscuro.png')"; //FONDO HEADER
+    if (header) header.style.backgroundImage = "url('imagenes/fondooscuro.png')"; //FONDO HEADER
     titulos.forEach(t => t.style.color = "#e8e8e8"); //TITULOS (H1.......H6)
     texto.forEach(t => t.style.color = "#e8e8e8"); //TEXTOS (P)
     negrita.forEach(n => n.style.color = "#ffffffff"); //NEGRITA (STRONG)
@@ -102,7 +102,7 @@ if (toggle) {
   function aplicarEstilosPaginaClaro() {
     //----GENERAL
     if (body) body.style.backgroundColor = "#e8e8e8c8"; //FONDO PAGINA
-    if (header) header.style.backgroundImage = "url('./../imagenes/fondoclaro.png')"; //FONDO HEADER
+    if (header) header.style.backgroundImage = "url('imagenes/fondoclaro.png')"; //FONDO HEADER
     titulos.forEach(t => t.style.color = "#2E2D2D"); //TITULOS (H1.......H6)
     texto.forEach(t => t.style.color = "#2E2D2D"); //TEXTOS (P)
     negrita.forEach(n => n.style.color = ""); //NEGRITA (STRONG)
